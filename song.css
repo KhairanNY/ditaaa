@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .Header {
+    background-image: url(assets/dark-academia.jpg);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid gainsboro;
+    }
+
+  .Logo {
+    display: flex;
+    align-items: center;
+    }
+
+  .Icon {
+    margin-left: 20px;
+    }
+
+  .Icon img {
+    width: 50px;
+    border-radius: 25% 10%;
+    }
+
+  .Nama {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    }
+
+  .Header ul {
+    display: flex;
+    }
+
+  .Header li {
+    margin: 0px 20px;
+    font-size: 20px;
+    }
+
+  .Header li a {
+    color: whitesmoke;
+    }
+
+  .Header li a:hover {
+    color: #FFC0CB; /* Ganti warna teks saat di-hover (misalnya pink) */
+    transform: scale(5); /* Perbesar teks sedikit */
+    opacity: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
+    transform: translateY(-2px); /* Timbul ke atas */
+    }
+
+  .Isi {   /* Main Section */
+    background-color: #2c2c54; /* Dark romantic background */
+    background-size: cover;
+    padding: -10px 0px 0px 0px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .song-container {
+        text-align: center;
+    }
+
+    .song-container h1 {
+        margin: 40px 0;
+        font-size: 2.5em;
+        color: #FFD700; /* Golden color for romantic feel */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .song-container p {
+        margin-top: 20px;
+        font-size: 1em;
+        line-height: 1.5;
+        max-width: 600px;
+        color: #FFC0CB; /* Soft pink for a romantic feel */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+
+    .song-icon {
+        width: 250px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .song-icon:hover {
+        transform: scale(1.1);
+    }

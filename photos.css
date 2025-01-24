@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .Header {
+    background-image: url(assets/dark-academia.jpg);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid gainsboro;
+    }
+
+  .Logo {
+    display: flex;
+    align-items: center;
+    }
+
+  .Icon {
+    margin-left: 20px;
+    }
+
+  .Icon img {
+    width: 50px;
+    border-radius: 25% 10%;
+    }
+
+  .Nama {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    }
+
+  .Header ul {
+    display: flex;
+    }
+
+  .Header li {
+    margin: 0px 20px;
+    font-size: 20px;
+    }
+
+  .Header li a {
+    color: whitesmoke;
+    }
+
+  .Header li a:hover {
+    color: #FFC0CB; /* Ganti warna teks saat di-hover (misalnya pink) */
+    transform: scale(5); /* Perbesar teks sedikit */
+    opacity: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
+    transform: translateY(-2px); /* Timbul ke atas */
+    }
+
+  .Isi {
+    background-color: #2c2c54; /* Dark romantic background */
+    background-size: cover;
+    padding: 40px 0px 0px 0px;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .Isi h1 {
+    margin: 20px;
+    font-size: 2.5em;
+    color: #FFC0CB; /* Soft pink for a romantic feel */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .gallery h3 {
+    margin: 20px 0;
+    font-size: 1em;
+    color: #FFC0CB; /* Soft pink for a romantic feel */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    aspect-ratio: 16 / 9;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+
+  .gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text */
+    color: #FFC0CB; /* Romantic pink */
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .gallery-item:hover .caption {
+    opacity: 1; /* Text appears on hover */
+  }
+
+    /* Center align the specific gallery item */
+  .center-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    aspect-ratio: 16 / 9;
+    grid-column: 1 / -1; /* Membuat elemen berada di tengah grid */
+    text-align: center;
+    justify-self: center;
+    width: 400px;
+  }
+
+  /* Ensure the image and caption are aligned */
+  .center-item img {
+    margin: 0 auto; /* Centers the image horizontally */
+  }
+
+  .center-item .caption {
+    text-align: center; /* Centers the caption text */
+  }
+
+  /* Lightbox Styling */
+  .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  }
+
+  .lightbox:target {
+      display: flex;
+  }
+
+  .lightbox .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  .lightbox .close:hover {
+      color: #f44336;
+  }
