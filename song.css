@@ -131,6 +131,8 @@
 
   .song-container p {
       font-size: 0.9em; /* Kurangi ukuran font */
+      word-spacing: 0.3rem;
+      line-height: 1.5;
   }
 
   .song-icon {
