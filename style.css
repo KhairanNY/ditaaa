@@ -135,21 +135,15 @@
 @media (max-width: 768px) {
   .Header {
       flex-direction: column;
-      padding: 10px;
-  }
-
-  .Nama {
-      font-size: 16px;
-      margin-left: 0;
   }
 
   .Header ul {
       flex-direction: column;
+      padding: 10px 0;
   }
 
   .Header li {
       margin: 10px 0;
-      font-size: 16px;
   }
 
   .Isi h1 {

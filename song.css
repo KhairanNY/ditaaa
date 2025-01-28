@@ -67,10 +67,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Tambahkan untuk memastikan tata letak vertikal */
+
     }
 
     .song-container {
         text-align: center;
+        padding: 0 15px; /* Tambahkan padding untuk memberi ruang */
+
     }
 
     .song-container h1 {
@@ -100,3 +104,43 @@
     .song-icon:hover {
         transform: scale(1.1);
     }
+
+    /* Media Queries untuk Responsivitas */
+@media screen and (max-width: 768px) {
+  .Header {
+      flex-direction: column; /* Susun vertikal */
+      text-align: center;
+  }
+
+  .Header ul {
+      flex-direction: column; /* Menu dalam susunan vertikal */
+      padding: 10px 0;
+  }
+
+  .Header li {
+      margin: 10px 0; /* Kurangi margin antar elemen */
+  }
+
+  .Isi {
+      padding: 20px; /* Tambahkan ruang untuk layar kecil */
+  }
+
+  .song-container h1 {
+      font-size: 2em; /* Kurangi ukuran font */
+  }
+
+  .song-container p {
+      font-size: 0.9em; /* Kurangi ukuran font */
+  }
+
+  .song-icon {
+      width: 200px; /* Kurangi ukuran gambar */
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+  }
+
+  .song-icon:hover {
+    transform: scale(1.1);
+  }
+}

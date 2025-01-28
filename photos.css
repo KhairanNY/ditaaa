@@ -189,3 +189,37 @@
   .lightbox .close:hover {
       color: #f44336;
   }
+
+  @media (max-width: 768px) { /* Untuk perangkat dengan lebar layar maksimum 768px */
+    .Header {
+        flex-direction: column; /* Ubah arah tata letak header menjadi vertikal */
+        text-align: center; /* Pusatkan elemen header */
+    }
+
+    .Header ul {
+        flex-direction: column; /* Ubah arah daftar menu menjadi vertikal */
+        padding: 10px 0;
+    }
+
+    .Header li {
+        margin: 10px 0; /* Kurangi margin agar sesuai dengan layar kecil */
+    }
+
+    .Isi h1 {
+        font-size: 1.8em; /* Perkecil ukuran font untuk heading */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Atur jumlah kolom untuk galeri */
+        gap: 15px; /* Kurangi jarak antar elemen galeri */
+        padding: 10px; /* Kurangi padding untuk galeri */
+    }
+
+    .gallery-item {
+        aspect-ratio: 4 / 3; /* Atur rasio aspek menjadi lebih kecil untuk layar sempit */
+    }
+
+    .center-item {
+        width: 300px; /* Sesuaikan lebar elemen tengah */
+    }
+}
