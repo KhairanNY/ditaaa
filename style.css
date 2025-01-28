@@ -130,3 +130,44 @@
     75% { color: #FF460F; }
     100% { color: #F5BD3D; }
   }
+
+  /* Responsivitas */
+@media (max-width: 768px) {
+  .Header {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .Nama {
+      font-size: 16px;
+      margin-left: 0;
+  }
+
+  .Header ul {
+      flex-direction: column;
+  }
+
+  .Header li {
+      margin: 10px 0;
+      font-size: 16px;
+  }
+
+  .Isi h1 {
+      font-size: 1.5rem;
+      margin: 0 2rem;
+  }
+
+  .Isi p {
+      font-size: 0.9rem;
+      margin: 0 2rem;
+  }
+
+  .birthday-text {
+      font-size: 2rem;
+  }
+
+  .love-text {
+      font-size: 1.5rem;
+  }
+}
+
